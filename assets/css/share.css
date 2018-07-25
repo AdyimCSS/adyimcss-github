@@ -1,0 +1,43 @@
+/* 
+FONT CSS ====================================== */
+/*
+@font-face {
+    font-family: 'thaisans_neuebold';
+    src: url('fonts/thaisansneue-bold-webfont.eot');
+    src: url('fonts/thaisansneue-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/thaisansneue-bold-webfont.woff2') format('woff2'),
+         url('fonts/thaisansneue-bold-webfont.woff') format('woff'),
+         url('fonts/thaisansneue-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+/* 
+MAIN LAYOUT CSS ====================================== */
+html, body {
+	margin:0px; height:100%; 
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	line-height:150%;
+	color:#000;
+	background:#fff;
+}
+a {color:#000; outline:none; text-decoration:none; outline: none;}
+a:hover {text-decoration:none; color:#333;}
+a img {border:0px;}
+
+.mainContainer {display:block; padding:50px;}
+
+
+/* 
+SHARE CSS ====================================== */
+.txtHide {display:none;}
+
+.clr {display:block; clear:both; height:0px; overflow:hidden;}
+.floatL {float:left;}
+.floatR {float:right;}
+.radius5 {-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.shadow5 { -webkit-box-shadow: #999 0px 0px 5px; -moz-box-shadow: #999 0px 0px 5px; box-shadow: #999 0px 0px 5px;}
+.alpha80 { filter: Alpha(Opacity=80); -moz-opacity: 0.8; opacity: 0.8; }
+.transition { -webkit-transition: all 0.1s ease-out; -moz-transition: all 0.1s ease-out; -ms-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out; transition: all 0.1s ease-out;}
