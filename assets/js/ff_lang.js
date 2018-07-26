@@ -33,8 +33,6 @@
 			var text = $.trim($(_ele).text());
 			var text_array = text.split(' ').filter(vdf.fn_select_en).filter(vdf.fn_unique);
 
-			console.log(text_array);
-
 			$.each(text_array, function(key, str){
 					var sl_1 = str.slice(0,1);
   				var sl_2 = str.slice(1);
