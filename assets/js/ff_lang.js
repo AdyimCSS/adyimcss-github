@@ -10,7 +10,7 @@
 		var vdf = {
 			s_tag : "<s>",
 			e_tag : "</s>",
-			g_text : "^|^"
+			number : true
 		}
 		if(obj) $.extend(vdf, obj);
 
@@ -19,7 +19,11 @@
 	  	return self.indexOf(value) === index;
 		};
 		vdf.fn_select_en = function (value, index, self) {
-	  	return /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?a-zA-Z0-9\s]+$/.test(value);
+			if(vdf.number){
+				return /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?a-zA-Z0-9\s]+$/.test(value);
+			}else{
+				return /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?a-zA-Z\s]+$/.test(value);
+			}
 		};
 		vdf.fn_escape_regx = function(str) {
 			return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");

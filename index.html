@@ -18,6 +18,10 @@
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css"  href="assets/css/share.css" />
+        <style>
+          body {font-size:20px;}
+          s.fs-en {font-family: fantasy; text-decoration: none;}
+        </style>
     </head>
     <body>
     	<div class="mainContainer">
@@ -46,7 +50,8 @@
         	$(document).ready(function(){
 				$('.ff-lang').ff_lang({
 					s_tag : '<s class="fs-en">',
-					e_tag : '</s>'
+					e_tag : '</s>',
+          number : true
 				});
 			});
         </script>
